@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Evaluate Water Usage{% endblock %}
+{% block page-header %}Evaluate Water Usage{% endblock %}
+
+{% block container %}
+
+<div id="form-box">
+    <form action="{% url 'evaluate' %}" method="POST">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+<script src="/static/js/main.js"></script>
+{% endblock %}

@@ -44,7 +44,7 @@ def evaluate(request):
             return HttpResponse(request, 'Success!')
 
     # send html on non-POST requests
-    return render(request, 'evaluate.html')
+    return render(request, 'evaluate_2.html', context={"form":EvaluatorForm()})
 
 
 @login_required

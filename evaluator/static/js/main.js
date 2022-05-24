@@ -196,5 +196,5 @@ function formComplete() {
   console.log(buildPOSTData());
   xhr.send(buildPOSTData());
   // show result
-  window.location.href = '/evaluate/result/'
+  //window.location.href = '/evaluate/result/'
 }
